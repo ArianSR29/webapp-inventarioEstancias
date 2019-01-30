@@ -1,5 +1,4 @@
 .main-container {
-  background: lime;
   height: 100vh;
   position: relative;
   display: -webkit-box;
@@ -7,7 +6,6 @@
   display: flex; }
   .main-container .c-login {
     position: absolute;
-    background: red;
     width: 90%;
     max-width: 450px;
     left: 50%;
@@ -18,11 +16,31 @@
     .main-container .c-login form {
       text-align: center; }
       .main-container .c-login form img {
-        background: purple;
         width: 50px;
         height: 50px;
         border-radius: 50%; }
+      .main-container .c-login form .mdl-textfield__input {
+        border-bottom: 1px solid #3f51b5 !important;
+        color: #3f51b5; }
+      .main-container .c-login form .mdl-textfield.is-invalid .mdl-textfield__input {
+        border-color: rgba(63, 81, 181, 0.5) !important; }
+      .main-container .c-login form .mdl-textfield--floating-label.is-invalid .mdl-textfield__label {
+        color: #3f51b5;
+        font-size: 16px; }
+      .main-container .c-login form .mdl-textfield.is-invalid .mdl-textfield__label:after {
+        background-color: #3f51b5 !important; }
       .main-container .c-login form button {
         width: 90%;
-        height: 30px;
-        border-radius: 50px; }
+        height: 40px;
+        border-radius: 5px;
+        margin-top: 20px;
+        outline: 0px;
+        color: #3f51b5;
+        border: 1px solid #3f51b5;
+        background: transparent; }
+        .main-container .c-login form button:hover {
+          background: #3f51b5;
+          color: #fff;
+          -webkit-transition: all 300ms ease-in-out;
+          -o-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out; }
