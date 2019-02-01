@@ -8,12 +8,23 @@
 
 
     <link rel="stylesheet" href=" <?php echo base_url(); ?>/assets/css/__config.css">
+    <link rel="stylesheet" href=" <?php echo base_url(); ?>/assets/css/dashboard.css">
 
 
 </head>
 <body>
-
-<h1>this is header</h1>
+<header>
+    <div class="c-title">
+        <span>Sistema de control de consumibles</span>
+    </div>
+    <div class="c-info-user">
+        <span> <?php echo $this->session->userdata("id")?> </span>
+        <span> <?php echo $this->session->userdata("nombre")?> </span>
+        <span> <?php echo $this->session->userdata("rol")?> </span>
+        <span>HOLA</span>
+        <a href=" <?php echo base_url(); ?>auth/logout">Cerrar sesión</a>
+    </div>
+</header>
     
 
 

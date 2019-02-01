@@ -9,7 +9,13 @@ class Auth extends CI_Controller {
     }
 
 	public function index(){
-		$this->load->view('admin/login');
+
+        if ($this->session->userdata("login")) {
+            redirect(base_url()."dashboard");
+        }else{
+            $this->load->view('admin/login');
+        }
+
     }
     
     public function login(){
@@ -22,14 +28,18 @@ class Auth extends CI_Controller {
             redirect(base_url());
         }else{
             $data = array(
-                'id'=>$res->id,
-                'nombre'=>$res->nombres,
-                'rol'=>$red->rol_id,
-                'login'=>true
+                'id' => $res->id,
+                'nombre' => $res->nombre,
+                'rol' => $red->rol_id,
+                'login' => TRUE
             );
             $this->session->set_userdata($data);
             redirect(base_url()."dashboard");
         }
+    }
+    public function logout(){
+        $this->session->sess_destroy();
+        redirect(base_url());
     }
 
 }

@@ -1,0 +1,24 @@
+header{
+    background: rgba(63,81,181, 1);
+    .c-title{
+        padding: 0px 30px;
+        background: purple;
+        span{
+            color: #fff;
+            font-family: 'Mukta-Regular';
+            font-size: 25px;
+        }
+    }
+    .c-info-user{
+        background: indianred;
+    }
+}
+aside{
+    background: red;
+}
+main{
+    background: paleturquoise;
+}
+footer{
+    background: gold;
+}

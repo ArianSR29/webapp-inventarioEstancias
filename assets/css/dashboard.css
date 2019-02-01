@@ -1,0 +1,20 @@
+header {
+  background: #3f51b5; }
+  header .c-title {
+    padding: 0px 30px;
+    background: purple; }
+    header .c-title span {
+      color: #fff;
+      font-family: 'Mukta-Regular';
+      font-size: 25px; }
+  header .c-info-user {
+    background: indianred; }
+
+aside {
+  background: red; }
+
+main {
+  background: paleturquoise; }
+
+footer {
+  background: gold; }
