@@ -17,7 +17,7 @@
     <div class="main-container">
         <div class="c-login">
             <form action="">
-                <img src=" <?php echo base_url(); ?>/assets/img/login/login-image.png " alt="login-image">
+                <img src=" <?php echo base_url(); ?>/assets/img/login/login-image.svg " alt="login-image">
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                     <input class="mdl-textfield__input" type="text" id="tb-user" required>
                     <label class="mdl-textfield__label" for="tb-user">Usuario</label>
@@ -29,7 +29,9 @@
                 <button>Entrar</button>
             </form>
         </div>
-        <p class="footer">Página cargada en <strong>{elapsed_time}</strong> segundos.</p>
     </div>
+    <footer>
+        <p>Página cargada en <strong>{elapsed_time}</strong> segundos.</p>    
+    </footer>
 </body>
 </html>
