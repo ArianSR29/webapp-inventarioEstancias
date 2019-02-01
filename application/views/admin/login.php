@@ -16,14 +16,14 @@
 <body>
     <div class="main-container">
         <div class="c-login">
-            <form action="">
+            <form action="<?php echo base_url(); ?>auth/login" method="post">
                 <img src=" <?php echo base_url(); ?>/assets/img/login/login-image.svg " alt="login-image">
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="tb-user" required>
+                    <input class="mdl-textfield__input" type="text" id="tb-user" name="tb_user" required>
                     <label class="mdl-textfield__label" for="tb-user">Usuario</label>
                 </div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="password" id="tb-password" required>
+                    <input class="mdl-textfield__input" type="password" id="tb-password" name="tb_password" required>
                     <label class="mdl-textfield__label" for="tb-password">Contraseña</label>
                 </div>
                 <button>Entrar</button>
