@@ -6,7 +6,8 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative; }
+  position: relative;
+  padding: 10px 0px; }
   header .c-title {
     padding: 10px 30px;
     line-height: 20px; }
@@ -43,12 +44,37 @@ aside, main {
   display: inline-flex; }
 
 aside {
-  background: red;
-  width: 25%; }
+  background: #007c4f;
+  width: 25%;
+  position: relative;
+  height: -webkit-fill-available; }
+  aside .c-title {
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Mukta-Regular';
+    padding: 10px 0px;
+    text-align: center; }
+  aside .c-listas {
+    width: 100%;
+    margin: 70px 0px; }
+    aside .c-listas ul li {
+      list-style: none;
+      width: 90%;
+      margin: 5px auto; }
+      aside .c-listas ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 15px;
+        font-family: 'Mukta-Regular'; }
+        aside .c-listas ul li a:hover {
+          color: #9de9cd; }
 
 main {
-  background: paleturquoise;
-  width: 74%; }
+  background: #fff;
+  width: 74%;
+  position: absolute; }
 
 footer {
   background: gold; }

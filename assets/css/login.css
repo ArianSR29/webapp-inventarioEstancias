@@ -1,5 +1,5 @@
 body {
-  background: #E7ECED; }
+  background: #fff; }
 
 .main-container {
   position: absolute;
@@ -17,34 +17,56 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 auto; }
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .main-container .c-login img {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto; }
+    .main-container .c-login .c-error-message {
+      background: #DB0F13;
+      color: #fff;
+      font-size: 15px;
+      font-family: 'Mukta-Regular';
+      text-align: center;
+      border-radius: 5px; }
     .main-container .c-login form {
-      text-align: center; }
-      .main-container .c-login form img {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%; }
+      text-align: center;
+      width: 100%; }
       .main-container .c-login form .mdl-textfield__input {
-        border-bottom: 1px solid #3f51b5 !important;
-        color: #3f51b5; }
+        border-bottom: 1px solid #008E5A !important;
+        color: #008E5A;
+        font-family: 'Mukta-Regular'; }
       .main-container .c-login form .mdl-textfield.is-invalid .mdl-textfield__input {
-        border-color: rgba(63, 81, 181, 0.5) !important; }
+        border-color: rgba(0, 142, 90, 0.5) !important; }
       .main-container .c-login form .mdl-textfield--floating-label.is-invalid .mdl-textfield__label {
-        color: #3f51b5;
-        font-size: 16px; }
-      .main-container .c-login form .mdl-textfield.is-invalid .mdl-textfield__label:after {
-        background-color: #3f51b5 !important; }
+        color: #008E5A;
+        font-size: 16px;
+        font-family: 'Mukta-Regular'; }
+      .main-container .c-login form .mdl-textfield.is-invalid .mdl-textfield__label:after,
+      .main-container .c-login form .mdl-textfield__label:after {
+        background-color: #008E5A !important;
+        font-family: 'Mukta-Regular'; }
+      .main-container .c-login form .mdl-textfield--floating-label.is-focused .mdl-textfield__label, .main-container .c-login form .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .main-container .c-login form .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
+        color: #008E5A !important;
+        font-family: 'Mukta-Regular'; }
       .main-container .c-login form button {
         width: 90%;
         height: 40px;
         border-radius: 5px;
         margin-top: 20px;
         outline: 0px;
-        color: #3f51b5;
-        border: 1px solid #3f51b5;
-        background: transparent; }
+        color: #008E5A;
+        border: 1px solid #008E5A;
+        background: transparent;
+        font-family: 'Mukta-Regular';
+        font-size: 17px;
+        letter-spacing: 1px; }
         .main-container .c-login form button:hover {
-          background: #3f51b5;
+          background: #008E5A;
           color: #fff;
           -webkit-transition: all 300ms ease-in-out;
           -o-transition: all 300ms ease-in-out;
@@ -57,5 +79,5 @@ footer {
   padding: 10px 0px;
   text-align: right; }
   footer p {
-    color: #3f51b5;
+    color: #008E5A;
     padding: 0px 50px; }

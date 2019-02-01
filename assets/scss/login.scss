@@ -1,5 +1,5 @@
 body{
-    background: #E7ECED;
+    background: #fff;
 }
 .main-container{
     position: absolute;
@@ -12,29 +12,47 @@ body{
         max-width: 450px;
         display: flex;
         margin: 0 auto;
+        flex-direction: column;
+        img{
+            width:150px;
+            height: 150px;
+            margin: 0 auto;
+        }
+        .c-error-message{
+            background: #DB0F13;
+            color: #fff;
+            font-size: 15px;
+            font-family: 'Mukta-Regular';
+            text-align: center;
+            border-radius: 5px;
 
+        }
         form{
             text-align: center;
+            width: 100%;
 
-            img{
-                width: 120px;
-                height: 120px;
-                border-radius: 50%;
-            }
 
             .mdl-textfield__input{
-                border-bottom: 1px solid rgba(63,81,181, 1)!important;
-                color: rgb(63,81,181);
+                border-bottom: 1px solid #008E5A!important;
+                color: #008E5A;
+                font-family: 'Mukta-Regular';
             }
             .mdl-textfield.is-invalid .mdl-textfield__input{
-                border-color: rgba(63,81,181, 0.5)!important;
+                border-color: rgba(0, 142, 90, 0.5)!important;
             }
             .mdl-textfield--floating-label.is-invalid .mdl-textfield__label{
-                color: rgba(63,81,181, 1);
+                color: #008E5A;
                 font-size: 16px;
+                font-family: 'Mukta-Regular';
             }
-            .mdl-textfield.is-invalid .mdl-textfield__label:after{
-                background-color: rgba(63,81,181, 1)!important;
+            .mdl-textfield.is-invalid .mdl-textfield__label:after,
+            .mdl-textfield__label:after{
+                background-color: #008E5A!important;
+                font-family: 'Mukta-Regular';
+            }
+            .mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label{
+                color: #008E5A!important;
+                font-family: 'Mukta-Regular';
             }
             button{
                 width: 90%;
@@ -42,12 +60,15 @@ body{
                 border-radius: 5px;
                 margin-top: 20px;
                 outline: 0px;
-                color: rgba(63,81,181, 1);
-                border: 1px solid rgba(63,81,181, 1);
+                color: #008E5A;
+                border: 1px solid #008E5A;
                 background: transparent;
+                font-family: 'Mukta-Regular';
+                font-size: 17px;
+                letter-spacing: 1px;
 
                 &:hover{
-                    background:  rgba(63,81,181, 1);
+                    background:  #008E5A;
                     color: #fff;
                     transition: all 300ms ease-in-out;
                 }
@@ -63,7 +84,7 @@ footer{
     text-align: right;
 
     p{
-        color: rgba(63,81,181, 1);
+        color: #008E5A;
         padding: 0px 50px;
     }
 }
