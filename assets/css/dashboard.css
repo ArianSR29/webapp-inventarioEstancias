@@ -100,7 +100,14 @@ main {
         font-family: 'Mukta-Regular';
         color: #fff;
         background: #008E5A;
-        border-radius: 5px; }
+        border-radius: 5px;
+        border: solid 1px #008E5A; }
+        main .c-main-consumibles .full_row a:hover {
+          background: #fff;
+          color: #008E5A;
+          -webkit-transition: all 200ms ease-in-out;
+          -o-transition: all 200ms ease-in-out;
+          transition: all 200ms ease-in-out; }
         main .c-main-consumibles .full_row a i {
           margin: 5px; }
     main .c-main-consumibles .c-table {
@@ -167,12 +174,53 @@ main {
         font-family: 'Mukta-Regular';
         color: #008E5A !important;
         font-size: 15px; }
-  main .agregar-consumible {
-    background: red; }
-    main .agregar-consumible .c-main-form {
-      background: lime; }
-      main .agregar-consumible .c-main-form form .c-input-group {
-        background: purple; }
+  main .agregar-consumible .c-main-form form .c-input-group {
+    margin: 5px 0px 0px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    main .agregar-consumible .c-main-form form .c-input-group label {
+      width: 200px;
+      font-family: 'Mukta-Bold';
+      color: #008E5A !important;
+      font-size: 15px; }
+    main .agregar-consumible .c-main-form form .c-input-group input {
+      width: 50%;
+      height: 25px;
+      outline: none;
+      font-family: 'Mukta-Regular';
+      color: #008E5A !important;
+      font-size: 15px;
+      text-indent: 20px;
+      border-radius: 3px;
+      border: solid 1px #D8D6D6; }
+      main .agregar-consumible .c-main-form form .c-input-group input:focus {
+        background: #008E5A;
+        color: #fff !important;
+        -webkit-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out; }
+  main .agregar-consumible .c-main-form form button {
+    text-decoration: none;
+    font-family: 'Mukta-Regular';
+    font-size: 15px;
+    color: #fff;
+    background: #008E5A;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    padding: 10px 20px; }
+    main .agregar-consumible .c-main-form form button:hover {
+      background: #fff;
+      color: #008E5A;
+      border: solid 1px #008E5A;
+      -webkit-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out; }
 
 footer {
   background: gold; }

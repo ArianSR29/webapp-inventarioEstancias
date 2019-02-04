@@ -12,24 +12,24 @@
     |       <?php endif; ?>
             <form action="<?php echo base_url();?>mantenimiento/consumibles/stock" method="post">
                 <div class="c-input-group">
-                    <input type="text" id="tb_tipo" name="tb_tipo">
                     <label for="tb_tipo">Tipo</label>
+                    <input type="text" id="tb_tipo" name="tb_tipo">
                 </div>
                 <div class="c-input-group">
-                    <input type="text" id="tb_marca" name="tb_marca">
                     <label for="tb_marca">Marca</label>
+                    <input type="text" id="tb_marca" name="tb_marca">
                 </div>
                 <div class="c-input-group">
-                    <input type="text" id="tb_descripcion" name="tb_descripcion">
                     <label for="tb_descripcion">Descripción</label>
+                    <input type="text" id="tb_descripcion" name="tb_descripcion">
                 </div>
                 <div class="c-input-group">
-                    <input type="number" id="tb_existencia" name="tb_existencia">
                     <label for="tb_existencia">Existencia</label>
+                    <input type="number" id="tb_existencia" name="tb_existencia">
                 </div>
                 <div class="c-input-group">
-                    <input type="text" id="tb_color" name="tb_color">
                     <label for="tb_color">Color</label>
+                    <input type="text" id="tb_color" name="tb_color">
                 </div>
                 <button>Guardar Consumible</button>
             </form>

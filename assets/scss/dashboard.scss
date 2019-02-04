@@ -135,6 +135,14 @@ main {
 				color: #fff;
 				background: #008E5A;
 				border-radius: 5px;
+				border: solid 1px #008E5A;
+
+				&:hover{
+					background: #fff;
+					color: #008E5A;
+					transition: all 200ms ease-in-out;
+
+				}
 
 				i {
 					margin: 5px;
@@ -240,13 +248,55 @@ main {
 		}
 	}
 	.agregar-consumible{
-		background: red;
 		.c-main-form{
-			background: lime;
 			form{
 				.c-input-group{
-					background: purple;
+					margin: 5px 0px 0px 0px;
+					display: flex;
+					flex-direction: column;
+
+					label{
+						width: 200px;
+						font-family: 'Mukta-Bold';
+						color: #008E5A!important;
+						font-size: 15px;
+					}
+					input{
+						width: 50%;
+						height: 25px;
+						outline: none;
+						font-family: 'Mukta-Regular';
+						color: #008E5A!important;
+						font-size: 15px;
+						text-indent: 20px;
+						border-radius: 3px;
+						border: solid 1px #D8D6D6;
+						
+						&:focus{
+							background: #008E5A;
+							color: #fff!important;
+							transition: all 300ms ease-in-out;
+						}
+					}
 				}
+			button{
+				text-decoration: none;
+				font-family: 'Mukta-Regular';
+				font-size: 15px;
+				color: #fff;
+				background: #008E5A;
+				border-radius: 5px;
+				border: none;
+				margin-top: 10px;
+				padding: 10px 20px;
+				&:hover{
+					background: #fff;
+					color: #008E5A;
+					border: solid 1px #008E5A;
+					transition: all 200ms ease-in-out;
+
+				}
+			}
 			}
 		}
 	}
