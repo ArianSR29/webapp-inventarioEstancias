@@ -38,7 +38,8 @@ header {
         -o-transition: all 500ms ease;
         transition: all 500ms ease; }
 
-aside, main {
+aside,
+main {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex; }
@@ -47,7 +48,7 @@ aside {
   background: #007c4f;
   width: 25%;
   position: relative;
-  height: -webkit-fill-available; }
+  height: 90vh; }
   aside .c-title {
     width: 100%;
     position: absolute;
@@ -75,6 +76,69 @@ main {
   background: #fff;
   width: 74%;
   position: absolute; }
+  main .c-main-consumibles {
+    padding: 30px 30px 0px 30px;
+    width: 100%; }
+    main .c-main-consumibles .c-main-title span,
+    main .c-main-consumibles .c-main-title small {
+      color: #008E5A;
+      font-family: 'Mukta-Regular'; }
+    main .c-main-consumibles .c-main-title span {
+      font-size: 30px; }
+    main .c-main-consumibles .c-main-title small {
+      font-size: 15px; }
+    main .c-main-consumibles .full_row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      background: #d8d6d6;
+      padding: 10px; }
+      main .c-main-consumibles .full_row a {
+        padding: 5px 10px;
+        justify-self: flex-end;
+        text-decoration: none;
+        font-family: 'Mukta-Regular';
+        color: #fff;
+        background: #008E5A;
+        border-radius: 5px; }
+        main .c-main-consumibles .full_row a i {
+          margin: 5px; }
+    main .c-main-consumibles .c-table {
+      overflow-y: scroll;
+      height: 450px; }
+      main .c-main-consumibles .c-table table {
+        width: 100%;
+        text-align: left;
+        color: #008E5A;
+        font-family: 'Mukta-Regular';
+        margin-top: 20px;
+        border-collapse: collapse; }
+        main .c-main-consumibles .c-table table thead tr th {
+          font-family: 'Mukta-Bold';
+          border: #D8D6D6 1px solid;
+          padding: 5px; }
+        main .c-main-consumibles .c-table table tbody tr td {
+          border: #D8D6D6 1px solid;
+          padding: 5px; }
+          main .c-main-consumibles .c-table table tbody tr td .c-btn-group {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center; }
+            main .c-main-consumibles .c-table table tbody tr td .c-btn-group a {
+              padding: 5px 15px;
+              margin: 0px 5px;
+              color: #fff;
+              font-size: 15px;
+              border-radius: 5px; }
+            main .c-main-consumibles .c-table table tbody tr td .c-btn-group .btn-info {
+              background: #065FD4; }
+            main .c-main-consumibles .c-table table tbody tr td .c-btn-group .btn-warning {
+              background: #E6BC27; }
+            main .c-main-consumibles .c-table table tbody tr td .c-btn-group .btn-danger {
+              background: #FF0000; }
 
 footer {
   background: gold; }

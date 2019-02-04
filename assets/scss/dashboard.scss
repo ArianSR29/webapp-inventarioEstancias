@@ -1,96 +1,209 @@
-header{
-    background: #008E5A;
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding: 10px 0px;
-    .c-title{
-        padding: 10px 30px;
-        line-height: 20px;
+header {
+	background: #008E5A;
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding: 10px 0px;
 
-        span{
-            color: #fff;
-            font-family: 'Mukta-Bold';
-            font-size: 25px;
-        }
-    }
-    .c-info-user{
-        position: absolute;
-        right: 20px;;
-        span{
-            font-family: 'Mukta-Regular';
-            font-size: 17px;
-            color: #fff;
-            padding: 0px 20px;
-        }
-        a{
-            text-decoration: none;
-            color: #fff;
-            font-family: 'Mukta-Regular';
-            font-size: 15px;
-            border: solid 1px #fff;
-            border-radius: 5px;
-            padding: 3px 10px;
-            
-            &:hover{
-                background: #fff;
-                color: #008E5A;
-                transition: all 500ms ease;
-            }
-        }
-    }
+	.c-title {
+		padding: 10px 30px;
+		line-height: 20px;
+
+		span {
+			color: #fff;
+			font-family: 'Mukta-Bold';
+			font-size: 25px;
+		}
+	}
+
+	.c-info-user {
+		position: absolute;
+		right: 20px;
+		;
+
+		span {
+			font-family: 'Mukta-Regular';
+			font-size: 17px;
+			color: #fff;
+			padding: 0px 20px;
+		}
+
+		a {
+			text-decoration: none;
+			color: #fff;
+			font-family: 'Mukta-Regular';
+			font-size: 15px;
+			border: solid 1px #fff;
+			border-radius: 5px;
+			padding: 3px 10px;
+
+			&:hover {
+				background: #fff;
+				color: #008E5A;
+				transition: all 500ms ease;
+			}
+		}
+	}
 }
 
 
 // Estilos para la sección del ASIDE
-aside, main{
-    display: inline-flex;
+aside,
+main {
+	display: inline-flex;
 }
-aside{
-    background: rgb(0, 124, 79);
-    width: 25%;
+
+aside {
+	background: rgb(0, 124, 79);
+	width: 25%;
     position: relative;
-    height: -webkit-fill-available;    
-    .c-title{
-        width: 100%;
-        position: absolute;
-        color: #fff;
-        font-size: 20px;
-        font-family: 'Mukta-Regular';
-        padding: 10px 0px;
-        text-align: center;
-    }
-    .c-listas{
-        width: 100%;
-        margin: 70px 0px;
-        ul{
-            li{
-                list-style: none;
-                width: 90%;
-                margin: 5px auto;
-                a{
-                    text-decoration: none;
-                    color: #fff;
-                    font-size: 15px;
-                    font-family: 'Mukta-Regular';
-                    &:hover{
-                        color: rgb(157, 233, 205);
-                    }
-                }
-            }
-        }
-    }
+    height: 90vh;
+
+	.c-title {
+		width: 100%;
+		position: absolute;
+		color: #fff;
+		font-size: 20px;
+		font-family: 'Mukta-Regular';
+		padding: 10px 0px;
+		text-align: center;
+	}
+
+	.c-listas {
+		width: 100%;
+		margin: 70px 0px;
+
+		ul {
+			li {
+				list-style: none;
+				width: 90%;
+				margin: 5px auto;
+
+				a {
+					text-decoration: none;
+					color: #fff;
+					font-size: 15px;
+					font-family: 'Mukta-Regular';
+
+					&:hover {
+						color: rgb(157, 233, 205);
+					}
+				}
+			}
+		}
+	}
 }
 
 // Estilos para la sección del DASHBOARD principal
-main{
-    background: #fff;
-    width: 74%;
-    position: absolute;
+main {
+	background: #fff;
+	width: 74%;
+	position: absolute;
+
+	// Estilos para la sección del DASHBOARD -> Consumibles
+	.c-main-consumibles {
+		padding: 30px 30px 0px 30px;
+		width: 100%;
+
+		.c-main-title {
+
+			span,
+			small {
+				color: #008E5A;
+				font-family: 'Mukta-Regular';
+			}
+
+			span {
+				font-size: 30px;
+			}
+
+			small {
+				font-size: 15px;
+			}
+		}
+
+		.full_row {
+			display: flex;
+			background: rgb(216, 214, 214);
+			padding: 10px;
+
+			a {
+				padding: 5px 10px;
+				justify-self: flex-end;
+				text-decoration: none;
+				font-family: 'Mukta-Regular';
+				color: #fff;
+				background: #008E5A;
+				border-radius: 5px;
+
+				i {
+					margin: 5px;
+				}
+			}
+		}
+
+		.c-table {
+            overflow-y: scroll;
+            height: 450px;
+			table {
+				width: 100%;
+				text-align: left;
+				color: #008E5A;
+				font-family: 'Mukta-Regular';
+				margin-top: 20px;
+                border-collapse: collapse;
+
+				thead {
+					tr {
+						th {
+							font-family: 'Mukta-Bold';
+							border: #D8D6D6 1px solid;
+							padding: 5px;
+						}
+					}
+				}
+
+				tbody {
+					tr {
+						td {
+							border: #D8D6D6 1px solid;
+							padding: 5px;
+
+							.c-btn-group {
+								display: flex;
+								justify-content: center;
+
+								a {
+									padding: 5px 15px;
+									margin: 0px 5px;
+									color: #fff;
+                                    font-size: 15px;
+                                    border-radius: 5px;
+								}
+
+								.btn-info {
+									background: #065FD4;
+								}
+
+								.btn-warning {
+									background: #E6BC27;
+								}
+
+								.btn-danger {
+									background: #FF0000;
+								}
+							}
+						}
+					}
+
+				}
+			}
+		}
+	}
 }
 
 // Estilos para la sección del FOOTER
 
-footer{
-    background: gold;
+footer {
+	background: gold;
 }
