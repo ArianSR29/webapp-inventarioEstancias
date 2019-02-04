@@ -28,11 +28,19 @@
                                 <td> <?php echo $consumible->descripcion; ?> </td>
                                 <td> <?php echo $consumible->total_consumibles; ?> </td>
                                 <td> <?php echo $consumible->color; ?> </td>
+                                <?php 
+                                    $data_consumible =  $consumible->id_consumible."*".
+                                                        $consumible->tipo."*".
+                                                        $consumible->marca."*".
+                                                        $consumible->descripcion."*".
+                                                        $consumible->total_consumibles."*".
+                                                        $consumible->color;
+                                ?>
                                 <td>
                                     <div class="c-btn-group">
-                                        <a href="" class="btn-info"><i class="fa fa-eye"></i></a>
+                                        <!-- <button class="btn-info" value=" <?php echo $data_consumible ?> "><i class="fa fa-eye"></i></button> -->
                                         <a href="<?php echo base_url(); ?>mantenimiento/consumibles/editConsumible/<?php echo $consumible->id_consumible; ?>" class="btn-warning"><i class="fa fa-pencil-alt"></i></a>
-                                        <a href="" class="btn-danger"><i class="fa fa-times"></i></a>
+                                        <a href="<?php echo base_url(); ?>mantenimiento/consumibles/deleteConsumible/<?php echo $consumible->id_consumible; ?>" class="btn-danger"><i class="fa fa-times"></i></a>
                                     </div>
                                 </td>
                             </tr>
@@ -43,3 +51,18 @@
         </div>
     </section>
 </main>
+<script>
+	$(".btn-danger").on("click", function (e) {
+        var base_url = "<?php echo base_url(); ?>";
+		e.preventDefault();
+		var ruta = $(this).attr("href");
+
+		$.ajax({
+			url: ruta,
+			type: "POST",
+			success: function (resp) {
+                window.location.href = base_url+"mantenimiento/consumibles" + resp;
+			}
+		});
+	});
+</script>

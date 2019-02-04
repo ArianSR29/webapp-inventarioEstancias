@@ -134,12 +134,13 @@ main {
             -webkit-box-pack: center;
             -ms-flex-pack: center;
             justify-content: center; }
-            main .c-main-consumibles .c-table table tbody tr td .c-btn-group a {
-              padding: 5px 15px;
+            main .c-main-consumibles .c-table table tbody tr td .c-btn-group a, main .c-main-consumibles .c-table table tbody tr td .c-btn-group button {
+              padding: 5px 10px;
               margin: 0px 5px;
               color: #fff;
               font-size: 15px;
-              border-radius: 5px; }
+              border-radius: 5px;
+              border: none; }
             main .c-main-consumibles .c-table table tbody tr td .c-btn-group .btn-info {
               background: #065FD4; }
             main .c-main-consumibles .c-table table tbody tr td .c-btn-group .btn-warning {

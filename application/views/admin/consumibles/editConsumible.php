@@ -2,7 +2,7 @@
     <section class="c-main-consumibles agregar-consumible">
         <div class="c-main-title">
             <span>Consumibles</span>
-            <small>Nuevo</small>
+            <small>Actualizar</small>
         </div>
         <div class="c-main-form">
             <?php if($this->session->flashdata("error")): ?>

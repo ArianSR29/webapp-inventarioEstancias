@@ -82,4 +82,9 @@ class Consumibles extends CI_Controller {
 			redirect(base_url()."mantenimiento/consumibles/editConsumible/".$id_consumible);
 		}
 	}
+	public function deleteConsumible($id_consumible){
+		$data = array(
+			'estado' => "0", );
+		$this->Consumibles_model->updateConsumible($id_consumible, $data);
+	}
 }
