@@ -167,6 +167,12 @@ main {
         font-family: 'Mukta-Regular';
         color: #008E5A !important;
         font-size: 15px; }
+  main .agregar-consumible {
+    background: red; }
+    main .agregar-consumible .c-main-form {
+      background: lime; }
+      main .agregar-consumible .c-main-form form .c-input-group {
+        background: purple; }
 
 footer {
   background: gold; }

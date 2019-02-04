@@ -239,6 +239,17 @@ main {
 			}
 		}
 	}
+	.agregar-consumible{
+		background: red;
+		.c-main-form{
+			background: lime;
+			form{
+				.c-input-group{
+					background: purple;
+				}
+			}
+		}
+	}
 }
 
 // Estilos para la sección del FOOTER

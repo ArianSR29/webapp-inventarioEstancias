@@ -4,7 +4,7 @@
             <span>Consumibles</span>
             <small>Listado</small>
         </div>
-        <div class="full_row"><a href=""><i class="fa fa-plus"></i>Agregar Consumible</a></div>
+        <div class="full_row"><a href="<?php echo base_url();?>mantenimiento/consumibles/addConsumible"><i class="fa fa-plus"></i>Agregar Consumible</a></div>
         <div class="c-table">
             <table id="consumibles-table">
                 <thead>
@@ -13,7 +13,7 @@
                         <th>Tipo</th>
                         <th>Marca</th>
                         <th>Descripción</th>
-                        <th>Existencia Total</th>
+                        <th>Existencia</th>
                         <th>Color</th>
                         <th>Opciones</th>
                     </tr>

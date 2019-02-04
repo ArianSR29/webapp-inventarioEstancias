@@ -8,5 +8,8 @@ class Consumibles_model extends CI_Model {
         $resultados = $this->db->get("tb_consumibles");
 
         return  $resultados->result();
+    }
+    public function saveConsumible($data){
+        return $this->db->insert("tb_consumibles",$data);
     } 
 }
