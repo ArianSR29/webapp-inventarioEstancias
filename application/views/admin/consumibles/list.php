@@ -31,7 +31,7 @@
                                 <td>
                                     <div class="c-btn-group">
                                         <a href="" class="btn-info"><i class="fa fa-eye"></i></a>
-                                        <a href="" class="btn-warning"><i class="fa fa-pencil-alt"></i></a>
+                                        <a href="<?php echo base_url(); ?>mantenimiento/consumibles/editConsumible/<?php echo $consumible->id_consumible; ?>" class="btn-warning"><i class="fa fa-pencil-alt"></i></a>
                                         <a href="" class="btn-danger"><i class="fa fa-times"></i></a>
                                     </div>
                                 </td>
