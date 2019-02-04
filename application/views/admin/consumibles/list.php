@@ -6,7 +6,7 @@
         </div>
         <div class="full_row"><a href=""><i class="fa fa-plus"></i>Agregar Consumible</a></div>
         <div class="c-table">
-            <table>
+            <table id="consumibles-table">
                 <thead>
                     <tr>
                         <th>#</th>

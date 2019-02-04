@@ -139,6 +139,34 @@ main {
               background: #E6BC27; }
             main .c-main-consumibles .c-table table tbody tr td .c-btn-group .btn-danger {
               background: #FF0000; }
+      main .c-main-consumibles .c-table .dataTables_length {
+        padding: 10px 0px;
+        font-family: 'Mukta-Regular';
+        color: #008E5A;
+        font-size: 15px; }
+        main .c-main-consumibles .c-table .dataTables_length select {
+          font-family: 'Mukta-Regular';
+          margin: 0px 5px;
+          color: #008E5A;
+          background: #D8D6D6;
+          border: none;
+          font-size: 15px; }
+      main .c-main-consumibles .c-table .dataTables_filter {
+        padding: 10px 15px;
+        font-family: 'Mukta-Regular';
+        color: #008E5A;
+        font-size: 15px; }
+        main .c-main-consumibles .c-table .dataTables_filter input {
+          border: solid 1px #D8D6D6;
+          font-family: 'Mukta-Regular';
+          color: #008E5A;
+          font-size: 15px; }
+      main .c-main-consumibles .c-table .dataTables_info,
+      main .c-main-consumibles .c-table .previous,
+      main .c-main-consumibles .c-table .next {
+        font-family: 'Mukta-Regular';
+        color: #008E5A !important;
+        font-size: 15px; }
 
 footer {
   background: gold; }

@@ -56,8 +56,8 @@ main {
 aside {
 	background: rgb(0, 124, 79);
 	width: 25%;
-    position: relative;
-    height: 90vh;
+	position: relative;
+	height: 90vh;
 
 	.c-title {
 		width: 100%;
@@ -143,15 +143,16 @@ main {
 		}
 
 		.c-table {
-            overflow-y: scroll;
-            height: 450px;
+			overflow-y: scroll;
+			height: 450px;
+
 			table {
 				width: 100%;
 				text-align: left;
 				color: #008E5A;
 				font-family: 'Mukta-Regular';
 				margin-top: 20px;
-                border-collapse: collapse;
+				border-collapse: collapse;
 
 				thead {
 					tr {
@@ -177,8 +178,8 @@ main {
 									padding: 5px 15px;
 									margin: 0px 5px;
 									color: #fff;
-                                    font-size: 15px;
-                                    border-radius: 5px;
+									font-size: 15px;
+									border-radius: 5px;
 								}
 
 								.btn-info {
@@ -197,6 +198,44 @@ main {
 					}
 
 				}
+			}
+
+			.dataTables_length {
+				padding: 10px 0px;
+				font-family: 'Mukta-Regular';
+				color: #008E5A;
+				font-size: 15px;
+
+				select {
+					font-family: 'Mukta-Regular';
+					margin: 0px 5px;
+					color: #008E5A;
+					background: #D8D6D6;
+					border: none;
+					font-size: 15px;
+				}
+
+			}
+
+			.dataTables_filter {
+				padding: 10px 15px;
+				font-family: 'Mukta-Regular';
+				color: #008E5A;
+				font-size: 15px;
+				
+				input{
+					border: solid 1px #D8D6D6;
+					font-family: 'Mukta-Regular';
+					color: #008E5A;
+					font-size: 15px;
+				}
+			}
+			.dataTables_info,
+			.previous ,
+			.next{
+				font-family: 'Mukta-Regular';
+				color: #008E5A!important;
+				font-size: 15px;
 			}
 		}
 	}
